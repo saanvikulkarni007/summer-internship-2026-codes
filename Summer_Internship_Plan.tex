@@ -1,0 +1,178 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{colortbl}
+
+% ── Colours ──────────────────────────────────────────────────────────────────
+\definecolor{darkblue}{HTML}{1A2E4A}
+\definecolor{midblue}{HTML}{2563EB}
+\definecolor{lightblue}{HTML}{EFF6FF}
+\definecolor{accent}{HTML}{10B981}
+\definecolor{greytext}{HTML}{374151}
+\definecolor{lightgrey}{HTML}{F3F4F6}
+\definecolor{bordergrey}{HTML}{D1D5DB}
+
+% ── Section formatting ────────────────────────────────────────────────────────
+\titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\color{midblue}\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{midblue}}{}{0em}{}
+
+% ── Header / Footer ───────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small\color{greytext}Summer Internship Plan 2025}
+\lhead{\small\color{greytext}Software / Technology Track}
+\rfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ── Hyperlinks ────────────────────────────────────────────────────────────────
+\hypersetup{colorlinks=true, urlcolor=midblue, linkcolor=midblue}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\begin{document}
+
+% ── Title block ───────────────────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries\color{darkblue} MY PLAN FOR SUMMER INTERNSHIP}\\[6pt]
+  {\large\color{midblue} Software / Technology Track}\\[4pt]
+  {\small\color{greytext} Duration: June -- August 2025 \quad|\quad Prepared: May 2025}
+\end{center}
+\noindent\color{midblue}\rule{\linewidth}{1.5pt}\color{black}
+\vspace{4pt}
+
+% ── 1. Objective ──────────────────────────────────────────────────────────────
+\section{1.\quad Objective}
+
+This document outlines my structured plan for a three-month summer software internship.
+The goal is to gain hands-on industry experience, contribute meaningfully to real-world
+projects, develop professional skills, and build a strong foundation for a full-time
+career in software engineering.
+
+% ── 2. Goals ─────────────────────────────────────────────────────────────────
+\section{2.\quad Goals \& Expected Outcomes}
+
+\vspace{4pt}
+\noindent
+\begin{tabularx}{\linewidth}{>{\bfseries\centering\arraybackslash}p{0.8cm}
+                              >{\raggedright\arraybackslash}X
+                              >{\raggedright\arraybackslash}p{5.5cm}}
+\rowcolor{darkblue}
+\color{white}\# & \color{white}\textbf{Goal} & \color{white}\textbf{Success Metric} \\
+\rowcolor{lightgrey}
+1 & Master codebase \& dev environment & First PR merged within Week 2 \\
+2 & Deliver a feature end-to-end & Feature shipped to staging/production \\
+\rowcolor{lightgrey}
+3 & Improve code quality & 95\%+ test coverage on owned modules \\
+4 & Collaborate in Agile team & Active participation in sprints \& standups \\
+\rowcolor{lightgrey}
+5 & Grow technical breadth & Learn 1 new framework or cloud service \\
+\end{tabularx}
+
+% ── 3. 12-Week Timeline ───────────────────────────────────────────────────────
+\section{3.\quad 12-Week Action Plan}
+
+\subsection{Phase 1 — Onboarding \& Setup \hfill \textcolor{accent}{Weeks 1--2}}
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+  \item Set up development environment, toolchain, and access permissions
+  \item Deep-dive into codebase architecture and internal documentation
+  \item Attend team meetings; understand sprint cadence and workflows
+  \item Complete first small task or bug fix; submit initial pull request
+\end{itemize}
+
+\subsection{Phase 2 — Core Contribution \hfill \textcolor{accent}{Weeks 3--7}}
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+  \item Own and implement a medium-complexity feature with mentor guidance
+  \item Write unit and integration tests; participate in code reviews
+  \item Learn CI/CD pipeline and deployment processes
+  \item Document work in confluence / wiki for team knowledge sharing
+\end{itemize}
+
+\subsection{Phase 3 — Independent Delivery \hfill \textcolor{accent}{Weeks 8--10}}
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+  \item Lead a full feature from design to deployment with minimal supervision
+  \item Present progress in a team demo or sprint review
+  \item Identify and fix a performance or reliability improvement
+  \item Explore adjacent technologies (cloud, ML APIs, DevOps tooling)
+\end{itemize}
+
+\subsection{Phase 4 — Wrap-Up \& Reflection \hfill \textcolor{accent}{Weeks 11--12}}
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+  \item Complete all pending tasks and hand over ongoing work
+  \item Write a technical post-mortem or project retrospective
+  \item Seek feedback from mentor and manager; compile lessons learned
+  \item Update portfolio / GitHub with intern project contributions
+\end{itemize}
+
+% ── 4. Technical Skills ───────────────────────────────────────────────────────
+\section{4.\quad Technical Skills to Develop}
+
+\vspace{4pt}
+\noindent
+\begin{tabularx}{\linewidth}{>{\bfseries\raggedright\arraybackslash}p{3.2cm}
+                              >{\raggedright\arraybackslash}X}
+\rowcolor{midblue}
+\color{white}Category & \color{white}\textbf{Skills / Tools} \\
+\rowcolor{lightblue}
+Languages    & Python, JavaScript / TypeScript, SQL \\
+Frameworks   & React, Node.js / Express, FastAPI \\
+\rowcolor{lightblue}
+Cloud \& DevOps & AWS (S3, Lambda, EC2), Docker, GitHub Actions \\
+Databases    & PostgreSQL, Redis, basic NoSQL (DynamoDB / MongoDB) \\
+\rowcolor{lightblue}
+Practices    & Git workflow, Code Review, TDD, Agile/Scrum \\
+Soft Skills  & Communication, time management, proactive problem-solving \\
+\end{tabularx}
+
+% ── 5. Weekly Habits ─────────────────────────────────────────────────────────
+\section{5.\quad Weekly Habits \& Routines}
+
+Consistency matters as much as intensity. Each week I plan to:
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+  \item Review sprint goals every Monday morning and prioritise tasks
+  \item Spend 30 min daily on self-directed learning (docs, tutorials, tech blogs)
+  \item Take notes during standups and sync meetings for personal accountability
+  \item Share at least one knowledge snippet with the team (Slack / wiki)
+  \item Reflect on the week's wins and blockers every Friday afternoon
+\end{itemize}
+
+% ── 6. Networking ─────────────────────────────────────────────────────────────
+\section{6.\quad Networking \& Professional Development}
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+  \item Schedule bi-weekly 1:1 check-ins with assigned mentor
+  \item Connect with at least 5 colleagues on LinkedIn by end of internship
+  \item Attend internal tech talks, lunch-and-learns, or hackathons if available
+  \item Ask for a mid-internship feedback session to course-correct early
+  \item Request a formal performance review and written recommendation at close
+\end{itemize}
+
+% ── 7. Success Criteria ───────────────────────────────────────────────────────
+\section{7.\quad Definition of Success}
+
+By the end of the internship I will consider the experience a success if:
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt]
+  \item At least one feature or significant contribution is live in the product
+  \item I have received positive feedback from my manager and mentor
+  \item I feel confident in the full software development lifecycle (design $\to$ deploy)
+  \item I have a clear understanding of whether a full-time role excites me
+  \item My GitHub portfolio and resume reflect tangible, demonstrable work
+\end{itemize}
+
+% ── Footer ────────────────────────────────────────────────────────────────────
+\vspace{1cm}
+\noindent\color{midblue}\rule{\linewidth}{1pt}\color{black}
+\begin{center}
+  \small\itshape\color{greytext}
+  This plan is a living document --- I will review and adapt it as the internship progresses.
+\end{center}
+
+\end{document}
